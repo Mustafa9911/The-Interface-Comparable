@@ -24,9 +24,19 @@ public class Person implements Comparable<Person>{
 	}
 
 	@Override
-	public int compareTo(Person arg0) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Person per) {
+
+		if(this.getEfterNamn().equals(per.getEfterNamn())){
+						
+			return this.getFörNamn().compareTo(per.getFörNamn());
+	
+		}else{
+			
+			return this.getEfterNamn().compareTo(per.getEfterNamn());
+			
+		}
+				
+		
 	}
 
 }
